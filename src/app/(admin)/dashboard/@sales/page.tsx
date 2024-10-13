@@ -15,19 +15,10 @@ interface SalesData {
 
 export interface PageProps {}
 export default async function Page({}: PageProps) {
-    const data:SalesData[] = await new Promise((res) => {
-        setTimeout(() => {
-            res(getSummarySales());
-        }, 4000);
-    });
+    const data = await getSummarySales();
     return (
         <DashboardCard
-            label={
-            <>
-                Sales details
-                <MagicButton />
-            </>
-        }
+            label="Sales details"
         >
             <SummaryTable
                 headers={
