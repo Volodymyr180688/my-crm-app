@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useRouter } from 'next/navigation';
-import Button from './button';
+import Button from '@/app/components/button';
 
 export interface AddPromotionButtonProps {
   companyId: string;
@@ -14,7 +14,9 @@ export default function AddPromotionButton({
   const router = useRouter();
   return (
     <Button
-      onClick={() => router.push(`/companies/${companyId}/new-promotion`)}
+      onClick={() =>
+        router.push(`/companies/${companyId}/new-promotion`, { scroll: false })
+      }
     >
       Add promotions
     </Button>
