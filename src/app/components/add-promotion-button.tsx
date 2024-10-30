@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useRouter } from 'next/navigation';
-import Button from '../components/button';
+import Button from './button';
 
 export interface AddPromotionButtonProps {
   companyId: string;

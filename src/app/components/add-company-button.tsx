@@ -1,9 +1,10 @@
 'use client';
 
 import React from 'react';
-import Button from './button';
+
 import dynamic from 'next/dynamic';
 import { useRouter } from 'next/navigation';
+import Button from './button';
 
 const CompanyFormModal = dynamic(() => import('./company-form-modal'), {
   ssr: false,
