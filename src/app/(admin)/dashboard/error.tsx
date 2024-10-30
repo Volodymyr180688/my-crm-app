@@ -1,6 +1,6 @@
 'use client';
 
-import Button from '@/app/components/button';
+import Button from '../../components/button';
 import React from 'react';
 
 export interface ErrorComponentProps {

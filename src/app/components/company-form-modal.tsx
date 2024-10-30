@@ -2,7 +2,7 @@
 
 import React from 'react';
 import CompanyForm from '@/app/components/company-form';
-import Modal, { ModalProps } from '@/app/components/modal';
+import Modal, { ModalProps } from '../components/modal';
 
 export default function CompanyFormModal({ onClose, ...rest }: ModalProps) {
   return (
