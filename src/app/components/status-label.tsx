@@ -5,6 +5,7 @@ import { CompanyStatus } from '@/lib/api';
 export interface StatusLabelProps {
   status: CompanyStatus;
   disabled?: boolean;
+  styled?: boolean;
 }
 
 const labelByStatus = {
