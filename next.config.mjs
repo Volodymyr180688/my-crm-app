@@ -7,6 +7,9 @@ const __dirname = path.dirname(__filename);
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  experimental: {
+    webpackBuildWorker: true,
+  },
   webpack: (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,
