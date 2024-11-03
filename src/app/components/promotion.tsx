@@ -1,9 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
 import type { Promotion } from '@/lib/api';
+
 export interface PromotionProps {
   promotion: Promotion;
 }
+
 export default function Promotion({ promotion }: PromotionProps) {
   return (
     <div className="rounded overflow-hidden	bg-gray-100">

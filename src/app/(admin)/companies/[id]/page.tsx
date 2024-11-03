@@ -30,7 +30,9 @@ export default async function Page({ params }: PageProps) {
   if (!company) {
     notFound();
   }
+
   const dehydratedState = dehydrate(queryClient);
+
   return (
     <HydrationBoundary state={dehydratedState}>
       <div className="py-6 px-10 grid grid-cols-12 gap-5">
